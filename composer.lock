@@ -1,0 +1,64 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "d7d7e123cd49f4741504b5afcd4b5979",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "youngj/httpserver",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/youngj/httpserver.git",
+                "reference": "aabdd56e2be82c12c313b236cee94da1fa3401a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/youngj/httpserver/zipball/aabdd56e2be82c12c313b236cee94da1fa3401a2",
+                "reference": "aabdd56e2be82c12c313b236cee94da1fa3401a2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "suggest": {
+                "php-cgi": "HTTPServer requires the php-cgi binary."
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "cgistream.php",
+                    "httprequest.php",
+                    "httpresponse.php",
+                    "httpserver.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jesse Young",
+                    "homepage": "https://github.com/youngj"
+                }
+            ],
+            "description": "A simple HTTP server, written in PHP, that serves PHP scripts and static files.",
+            "homepage": "https://github.com/youngj/httpserver",
+            "time": "2014-02-23 03:47:47"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "youngj/httpserver": 20
+    },
+    "prefer-stable": false,
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": []
+}
