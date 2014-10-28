@@ -63,12 +63,15 @@ class HttpClient implements Client
 
         $result = curl_exec($ch);
 
-        $errno = curl_errno($ch);
+        if ($result === false) {
+            $errno = curl_errno($ch);
+            $error = curl_error($ch);
+        }
 
         curl_close($ch);
 
-        if ($errno) {
-            throw new ClientException(curl_strerror($errno), $errno);
+        if (isset($errno, $error)) {
+            throw new ClientException($error, $errno);
         }
 
         return $result;
