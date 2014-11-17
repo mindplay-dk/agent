@@ -2,6 +2,9 @@
 
 /** @var \Composer\Autoload\ClassLoader $autoloader */
 $autoloader = require dirname(__DIR__) . '/vendor/autoload.php';
-$autoloader->addPsr4('mindplay\agent\\', __DIR__ . '/src');
 
-require __DIR__ . '/src/UserService.php';
+$autoloader->addClassMap(array(
+    'UserService' => __DIR__ . '/src/UserService.php',
+    'TestServer' => __DIR__ . '/src/TestServer.php',
+    'BackgroundTask' => __DIR__ . '/src/BackgroundTask.php',
+));

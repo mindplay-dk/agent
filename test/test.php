@@ -10,8 +10,6 @@ use mindplay\agent\ServiceProxy;
 
 require __DIR__ . '/header.php';
 
-require __DIR__ . '/src/BackgroundTask.php';
-
 test(
     'UserService fixture behavior',
     function () {

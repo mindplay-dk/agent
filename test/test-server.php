@@ -1,7 +1,6 @@
 <?php
 
 require __DIR__ . '/header.php';
-require __DIR__ . '/src/TestServer.php';
 
 $options = getopt('', array('port:'));
 
